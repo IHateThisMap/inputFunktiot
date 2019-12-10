@@ -8,5 +8,6 @@ void kysyMerkkijono(char ch[], int maxLeng){
             printf("\n%ssyota 1-%d merkkia, kiitos%s: ", YEL, maxLeng, NRM);
         }else break;
     }while(1);
+    while(fgetc(stdin) != '\n');
     strcpy(ch, isoOsoite);
 }
