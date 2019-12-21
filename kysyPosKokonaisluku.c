@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>     //strtoull()
 
+unsigned int kysyPosKokonaisluku(unsigned int minVal, unsigned int maxVal);
+
 /*
     Palauttaa käyttäjältä kysytyn positiivisen kokonailuvun muodossa unsigned int.
 
@@ -10,7 +12,7 @@
 
     (vähän modifoitu tähän tehtävään sopivammaksi
     tätä voisi vielä optimoida jonkin verran paremmaksi mutta saa nyt kelvata tähännn.)*/
-unsigned int kysyPosInt(unsigned int minVal, unsigned int maxVal){
+unsigned int kysyPosKokonaisluku(unsigned int minVal, unsigned int maxVal){
     unsigned long long syote = maxVal+1;
     int maxPituus = 25;
     char ch[maxPituus+1]; 
