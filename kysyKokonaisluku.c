@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>     //strtoull()
+#include <stdlib.h>     //strtoll()
 
 int kysyKokonaisluku(int minVal, int maxVal);
 
@@ -28,7 +28,6 @@ int kysyKokonaisluku(int minVal, int maxVal){
 
 
 void etsiKokonaisluku(char ch[], int pituus){  
-    bool min = false;
     for(int i = 0; i < pituus ; i++) {
         if (isdigit(ch[i])) {
             int a = 0;
